@@ -1,15 +1,98 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+    font-family: 'fontelogo';
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+}
 
         body {
-            background-color: hsla(hue, saturation, lightness);
-            color:rgba(red, green, blue, 0.5);
+            background-color: #dddddd;
+            color:rgba(0, 0, 0, 1);
         }
+
+        div#interface{
+            width: 900px;
+            background-color: white;
+            margin: -20px auto 0px auto;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+            padding: 10px;
+        }
+
         p {
             text-align: justify;
             text-indent: 50px;
         }
 
+        header#cabecalho img#icone {
+            position: relative;
+            left: 730px;
+            top: -40px;
+        }
 
+        header#cabecalho {
+            border-bottom: 1px #606060 solid;
+            height: 150px;
+            background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 80px;
+        }
+
+        header#cabecalho h1 {
+            font-family: fontelogo, sans-serif;
+            font-size: 30px;
+            color: #606060;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+            padding: 0px;
+            margin-bottom: 0px;
+        }
+
+        header#cabecalho h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            color: #888888;
+            padding: 0px;
+            margin-top: 0px;
+        }
+
+        section#corpo {
+            display: block;
+            width: 500px;
+            float: left;
+            border-right: 1px solid #606060;
+            padding-right: 20px;
+        }
+
+        table#tabelaspec {
+            border: 1px solid #606060;
+            border-spacing: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table#tabelaspec td{
+            border: 1px solid #606060;
+        }
+
+        aside#lateral {
+            display: block;
+            width: 350px;
+            margin-top: 10px;
+            float: right;
+        }
+
+        footer#rodape {
+            clear: both;
+            border-top: 1px solid #606060;
+        }
+
+        footer#rodape p{
+            text-align: center;
+            }
+
+        footer#rodape a{
+            font-family: Arial, sans-serif;
+            color: #1900ff;
+            text-decoration: none;
+        }
+        
     /* Formatação de imagens com legendas */
 
     figure.foto-legenda {
@@ -49,9 +132,9 @@ nav#menu {
 nav#menu ul{
     list-style: none;
     text-transform: uppercase;
-    position: absolute;
-    top: -20px;
-    left: 300px;
+    position: relative;
+    top: -230px;
+    left: 341px;
 }
 
 nav#menu li{
@@ -59,8 +142,23 @@ nav#menu li{
     background-color: #dddddd;
     padding: 10px;
     margin: 2px;
+    transition: 1s;
+}
+
+nav#menu li:hover{
+    background-color: #606060;
 }
 
 nav#menu h1{
     display: none;
+}
+
+nav#menu a{
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color: white;
+    text-decoration: underline;
 }
