@@ -178,7 +178,14 @@
             text-align: center;
             }
 
-        
+            aside#lateral video {
+                width: 100%;
+                margin-top: 0;
+            }
+            article#noticia-principal video {
+                margin-bottom: 15px;
+                width: 100%;
+            }
         
     /* Formatação de imagens com legendas */
 
